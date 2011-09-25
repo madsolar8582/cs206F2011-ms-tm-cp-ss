@@ -21,6 +21,7 @@ The goal of this project is to examine different methods of Software Engineering
 * [Official Site](http://eclipse.org/)
 * [Download Binaries](http://www.eclipse.org/downloads/)
 * [Official Documentation](http://help.eclipse.org/indigo/index.jsp)
+* [Git Plugin for Eclipse](http://eclipse.org/egit/)
 
 ####Google APIs####
 * [Google API Listing](http://code.google.com/more/)
