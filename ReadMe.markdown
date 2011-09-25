@@ -27,6 +27,9 @@ The goal of this project is to examine different methods of Software Engineering
 * [Google API Listing](http://code.google.com/more/)
 * [Google API Explorer](https://code.google.com/apis/explorer/)
 
+####Git####
+* [Pro Git](http://progit.org/)
+
 ###License###
 Licensed under the Academic Free License version 3.0
 
