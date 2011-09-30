@@ -31,7 +31,7 @@ The goal of this project is to examine different methods of Software Engineering
 * [Pro Git](http://progit.org/)
 
 ####Java####
-[JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ###License###
 Licensed under the Academic Free License version 3.0
