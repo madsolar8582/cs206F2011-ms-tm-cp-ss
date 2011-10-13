@@ -32,6 +32,7 @@ The goal of this project is to examine different methods of Software Engineering
 
 ####Java####
 * [JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Sun/Oracle Java Coding Standard](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 
 ###License###
 Licensed under the Academic Free License version 3.0
