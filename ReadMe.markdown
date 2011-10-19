@@ -28,6 +28,7 @@ The goal of this project is to examine different methods of Software Engineering
 * [Google API Explorer](https://code.google.com/apis/explorer/)
 
 ####Git####
+* [Git & GitHub Setup Guide](http://help.github.com/set-up-git-redirect)
 * [Git Download](http://git-scm.com/download)
 * [Pro Git](http://progit.org/)
 
