@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A2C20E2148B0AF600708243 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2C20E1148B0AF600708243 /* MapKit.framework */; };
+		7A2C20E5148B10AF00708243 /* KanduPickActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C20E4148B10AF00708243 /* KanduPickActivityViewController.m */; };
+		7A4922FC148ABA1300AD0D67 /* KanduLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4922FB148ABA1300AD0D67 /* KanduLocationViewController.m */; };
+		7A492302148ABDE200AD0D67 /* KanduActivityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A492301148ABDE200AD0D67 /* KanduActivityPickerViewController.m */; };
+		7A492305148AC31300AD0D67 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A492304148AC31300AD0D67 /* CoreLocation.framework */; };
+		7A492308148AD0E500AD0D67 /* KanduFindActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A492307148AD0E500AD0D67 /* KanduFindActivitiesViewController.m */; };
+		7A6CB18F148C042000B918DA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6CB18E148C042000B918DA /* MessageUI.framework */; };
+		7A6CB193148C04EA00B918DA /* KanduMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6CB192148C04EA00B918DA /* KanduMailViewController.m */; };
+		7AB8D9C0148AB3A0001AC8DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9BF148AB3A0001AC8DC /* UIKit.framework */; };
+		7AB8D9C2148AB3A0001AC8DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9C1148AB3A0001AC8DC /* Foundation.framework */; };
+		7AB8D9C4148AB3A0001AC8DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9C3148AB3A0001AC8DC /* CoreGraphics.framework */; };
+		7AB8D9CA148AB3A0001AC8DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8D9C8148AB3A0001AC8DC /* InfoPlist.strings */; };
+		7AB8D9CC148AB3A0001AC8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9CB148AB3A0001AC8DC /* main.m */; };
+		7AB8D9D0148AB3A0001AC8DC /* KanduAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */; };
+		7AB8D9D3148AB3A0001AC8DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D1148AB3A0001AC8DC /* MainStoryboard.storyboard */; };
+		7AB8D9D6148AB3A0001AC8DC /* KanduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A2C20E1148B0AF600708243 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7A2C20E3148B10AF00708243 /* KanduPickActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanduPickActivityViewController.h; sourceTree = "<group>"; };
+		7A2C20E4148B10AF00708243 /* KanduPickActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanduPickActivityViewController.m; sourceTree = "<group>"; };
+		7A4922FA148ABA1300AD0D67 /* KanduLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanduLocationViewController.h; sourceTree = "<group>"; };
+		7A4922FB148ABA1300AD0D67 /* KanduLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanduLocationViewController.m; sourceTree = "<group>"; };
+		7A492300148ABDE200AD0D67 /* KanduActivityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanduActivityPickerViewController.h; sourceTree = "<group>"; };
+		7A492301148ABDE200AD0D67 /* KanduActivityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanduActivityPickerViewController.m; sourceTree = "<group>"; };
+		7A492304148AC31300AD0D67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7A492306148AD0E400AD0D67 /* KanduFindActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanduFindActivitiesViewController.h; sourceTree = "<group>"; };
+		7A492307148AD0E500AD0D67 /* KanduFindActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanduFindActivitiesViewController.m; sourceTree = "<group>"; };
+		7A6CB18E148C042000B918DA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7A6CB191148C04EA00B918DA /* KanduMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanduMailViewController.h; sourceTree = "<group>"; };
+		7A6CB192148C04EA00B918DA /* KanduMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanduMailViewController.m; sourceTree = "<group>"; };
+		7AB8D9BB148AB3A0001AC8DC /* Kandu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kandu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB8D9BF148AB3A0001AC8DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AB8D9C1148AB3A0001AC8DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AB8D9C3148AB3A0001AC8DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AB8D9C7148AB3A0001AC8DC /* Kandu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kandu-Info.plist"; sourceTree = "<group>"; };
+		7AB8D9C9148AB3A0001AC8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AB8D9CB148AB3A0001AC8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AB8D9CD148AB3A0001AC8DC /* Kandu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kandu-Prefix.pch"; sourceTree = "<group>"; };
+		7AB8D9CE148AB3A0001AC8DC /* KanduAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanduAppDelegate.h; sourceTree = "<group>"; };
+		7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanduAppDelegate.m; sourceTree = "<group>"; };
+		7AB8D9D2148AB3A0001AC8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7AB8D9D4148AB3A0001AC8DC /* KanduViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanduViewController.h; sourceTree = "<group>"; };
+		7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanduViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AB8D9B8148AB3A0001AC8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6CB18F148C042000B918DA /* MessageUI.framework in Frameworks */,
+				7A2C20E2148B0AF600708243 /* MapKit.framework in Frameworks */,
+				7A492305148AC31300AD0D67 /* CoreLocation.framework in Frameworks */,
+				7AB8D9C0148AB3A0001AC8DC /* UIKit.framework in Frameworks */,
+				7AB8D9C2148AB3A0001AC8DC /* Foundation.framework in Frameworks */,
+				7AB8D9C4148AB3A0001AC8DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AB8D9B0148AB3A0001AC8DC = {
+			isa = PBXGroup;
+			children = (
+				7AB8D9C5148AB3A0001AC8DC /* Kandu */,
+				7AB8D9BE148AB3A0001AC8DC /* Frameworks */,
+				7AB8D9BC148AB3A0001AC8DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AB8D9BC148AB3A0001AC8DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8D9BB148AB3A0001AC8DC /* Kandu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AB8D9BE148AB3A0001AC8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6CB18E148C042000B918DA /* MessageUI.framework */,
+				7A2C20E1148B0AF600708243 /* MapKit.framework */,
+				7A492304148AC31300AD0D67 /* CoreLocation.framework */,
+				7AB8D9BF148AB3A0001AC8DC /* UIKit.framework */,
+				7AB8D9C1148AB3A0001AC8DC /* Foundation.framework */,
+				7AB8D9C3148AB3A0001AC8DC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AB8D9C5148AB3A0001AC8DC /* Kandu */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8D9D1148AB3A0001AC8DC /* MainStoryboard.storyboard */,
+				7AB8D9CE148AB3A0001AC8DC /* KanduAppDelegate.h */,
+				7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */,
+				7AB8D9D4148AB3A0001AC8DC /* KanduViewController.h */,
+				7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */,
+				7A4922FA148ABA1300AD0D67 /* KanduLocationViewController.h */,
+				7A4922FB148ABA1300AD0D67 /* KanduLocationViewController.m */,
+				7A492300148ABDE200AD0D67 /* KanduActivityPickerViewController.h */,
+				7A492301148ABDE200AD0D67 /* KanduActivityPickerViewController.m */,
+				7A492306148AD0E400AD0D67 /* KanduFindActivitiesViewController.h */,
+				7A492307148AD0E500AD0D67 /* KanduFindActivitiesViewController.m */,
+				7A2C20E3148B10AF00708243 /* KanduPickActivityViewController.h */,
+				7A2C20E4148B10AF00708243 /* KanduPickActivityViewController.m */,
+				7A6CB191148C04EA00B918DA /* KanduMailViewController.h */,
+				7A6CB192148C04EA00B918DA /* KanduMailViewController.m */,
+				7AB8D9C6148AB3A0001AC8DC /* Supporting Files */,
+			);
+			path = Kandu;
+			sourceTree = "<group>";
+		};
+		7AB8D9C6148AB3A0001AC8DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8D9C7148AB3A0001AC8DC /* Kandu-Info.plist */,
+				7AB8D9C8148AB3A0001AC8DC /* InfoPlist.strings */,
+				7AB8D9CB148AB3A0001AC8DC /* main.m */,
+				7AB8D9CD148AB3A0001AC8DC /* Kandu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AB8D9BA148AB3A0001AC8DC /* Kandu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AB8D9D9148AB3A0001AC8DC /* Build configuration list for PBXNativeTarget "Kandu" */;
+			buildPhases = (
+				7AB8D9B7148AB3A0001AC8DC /* Sources */,
+				7AB8D9B8148AB3A0001AC8DC /* Frameworks */,
+				7AB8D9B9148AB3A0001AC8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kandu;
+			productName = Kandu;
+			productReference = 7AB8D9BB148AB3A0001AC8DC /* Kandu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AB8D9B2148AB3A0001AC8DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7AB8D9B5148AB3A0001AC8DC /* Build configuration list for PBXProject "Kandu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7AB8D9B0148AB3A0001AC8DC;
+			productRefGroup = 7AB8D9BC148AB3A0001AC8DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AB8D9BA148AB3A0001AC8DC /* Kandu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AB8D9B9148AB3A0001AC8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB8D9CA148AB3A0001AC8DC /* InfoPlist.strings in Resources */,
+				7AB8D9D3148AB3A0001AC8DC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AB8D9B7148AB3A0001AC8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB8D9CC148AB3A0001AC8DC /* main.m in Sources */,
+				7AB8D9D0148AB3A0001AC8DC /* KanduAppDelegate.m in Sources */,
+				7AB8D9D6148AB3A0001AC8DC /* KanduViewController.m in Sources */,
+				7A4922FC148ABA1300AD0D67 /* KanduLocationViewController.m in Sources */,
+				7A492302148ABDE200AD0D67 /* KanduActivityPickerViewController.m in Sources */,
+				7A492308148AD0E500AD0D67 /* KanduFindActivitiesViewController.m in Sources */,
+				7A2C20E5148B10AF00708243 /* KanduPickActivityViewController.m in Sources */,
+				7A6CB193148C04EA00B918DA /* KanduMailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7AB8D9C8148AB3A0001AC8DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AB8D9C9148AB3A0001AC8DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AB8D9D1148AB3A0001AC8DC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AB8D9D2148AB3A0001AC8DC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AB8D9D7148AB3A0001AC8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AB8D9D8148AB3A0001AC8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AB8D9DA148AB3A0001AC8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Kandu/Kandu-Prefix.pch";
+				INFOPLIST_FILE = "Kandu/Kandu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7AB8D9DB148AB3A0001AC8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "Kandu/Kandu-Prefix.pch";
+				INFOPLIST_FILE = "Kandu/Kandu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AB8D9B5148AB3A0001AC8DC /* Build configuration list for PBXProject "Kandu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB8D9D7148AB3A0001AC8DC /* Debug */,
+				7AB8D9D8148AB3A0001AC8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB8D9D9148AB3A0001AC8DC /* Build configuration list for PBXNativeTarget "Kandu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB8D9DA148AB3A0001AC8DC /* Debug */,
+				7AB8D9DB148AB3A0001AC8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AB8D9B2148AB3A0001AC8DC /* Project object */;
+}
