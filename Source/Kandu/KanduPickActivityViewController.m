@@ -2,8 +2,8 @@
 //  KanduPickActivityViewController.m
 //  Kandu
 //
-//  Created by Madison Solarana on 12/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 #import "KanduPickActivityViewController.h"
@@ -44,18 +44,18 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
   if ([locatedActivities count] == 0) {
-    NSLog(@"No activities passed, Error!");
+    NSLog(@"No activities passed"); //log to let us know the user didn't select anything
   }
 }
 
 
 - (void)viewDidUnload
 {
-    [self setLocationTable:nil];
+  [self setLocationTable:nil];
   [self setEmailButton:nil];
-    [super viewDidUnload];
+  [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -69,7 +69,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
   if ([[segue identifier] isEqualToString:@"segueToMail"]) {
     KanduMailViewController *kmvc = (KanduMailViewController *)[segue destinationViewController];
-    [kmvc setSelectedActivities:selActivities];
+    [kmvc setSelectedActivities:selActivities]; //transfer the selected activites to the mail view
   }
 }
 
@@ -88,7 +88,6 @@
   }
   
   cell.textLabel.text = [locatedActivities objectAtIndex:indexPath.row];
-  //[cell setAccessoryType:UITableViewCellAccessoryCheckmark];
   
   return cell;
 }
@@ -96,34 +95,35 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
   UITableViewCell *cell = [tableView  cellForRowAtIndexPath:indexPath];
-  NSMutableArray *selectedItems = [[NSMutableArray alloc] initWithArray:locatedActivities];
+  NSMutableArray *selectedItems = [[NSMutableArray alloc] initWithArray:locatedActivities]; //tracks selected activities
   BOOL notIn = NO;
   
+  //This loop determines if an activity is already being tracked and adds/removes it accordingly
   if (cell.accessoryType == UITableViewCellAccessoryNone) {
     notIn = NO;
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     for (int i = 0; i < [selectedItems count]; i++) {
       if ([selectedItems count] == 0) {
-        [selectedItems addObject:cell.textLabel.text];
+        [selectedItems addObject:cell.textLabel.text]; //add by default if empty
       }
       else if ([selectedItems objectAtIndex:i] == cell.textLabel.text) {
         notIn = YES;
       }
     }
     if (!notIn) {
-      [selectedItems addObject:cell.textLabel.text];
+      [selectedItems addObject:cell.textLabel.text]; //add because not found and user selected
     }
   }
   else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
     cell.accessoryType = UITableViewCellAccessoryNone;
     for (int i = 0; i < [selectedItems count]; i++) {
       if ([selectedItems objectAtIndex:i] == cell.textLabel.text) {
-        [selectedItems removeObjectAtIndex:i];
+        [selectedItems removeObjectAtIndex:i]; //remove since user unselected
       }
     }
   }
   
-  selActivities = [[NSArray alloc] initWithArray:selectedItems];
+  selActivities = [[NSArray alloc] initWithArray:selectedItems]; //update the contents being tracked
 }
 
 @end

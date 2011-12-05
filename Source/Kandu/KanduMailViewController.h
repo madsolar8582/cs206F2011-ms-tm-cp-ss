@@ -2,8 +2,8 @@
 //  KanduMailViewController.h
 //  Kandu
 //
-//  Created by Madison Solarana on 12/4/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 
@@ -12,10 +12,11 @@
 #import <MessageUI/MFMailComposeViewController.h>
 
 @interface KanduMailViewController : UIViewController <MFMailComposeViewControllerDelegate>
-@property (nonatomic, retain) NSArray *selectedActivities;
 
-- (void)showMail:(id)sender;
-- (void)displayMailSheet;
-- (void)launchMailApp;
+@property (nonatomic, retain) NSArray *selectedActivities; //user selected activites
+
+- (void)showMail:(id)sender; //starts the process of composing an email
+- (void)displayMailSheet; //displays the mail composition UI
+- (void)launchMailApp; //launches the mail app on the iOS device
 
 @end

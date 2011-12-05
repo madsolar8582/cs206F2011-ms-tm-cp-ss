@@ -2,8 +2,8 @@
 //  KanduLocationViewController.m
 //  Kandu
 //
-//  Created by Madison Solarana on 12/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 #import "KanduLocationViewController.h"
@@ -48,15 +48,15 @@
     locationManager = [[CLLocationManager alloc] init];
   }
   
-  locationManager.delegate = self;
-  [locationManager startMonitoringSignificantLocationChanges];
+  locationManager.delegate = self; //tell the location manager to report to itself in this view
+  [locationManager startMonitoringSignificantLocationChanges]; //start the location manager
 }
 
 
 - (void)viewDidUnload
 {
   [self setLocationLabel:nil];
-    [super viewDidUnload];
+  [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -70,27 +70,26 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
   if ([[segue identifier] isEqualToString:@"segueToActivity"]) {
     KanduActivityPickerViewController *kapvc = (KanduActivityPickerViewController *)[segue destinationViewController];
-    [kapvc setUserLocation:bestEffortAtLocation];
+    [kapvc setUserLocation:bestEffortAtLocation]; //pass on the user location to the next view
   }
 }
 
 #pragma mark - Location Methods
 
-
 -(void)locationManager:(CLLocationManager *) manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
   
   NSDate* eventDate = newLocation.timestamp;
-  NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+  NSTimeInterval howRecent = [eventDate timeIntervalSinceNow]; //determine how long it has been since the last update
   if (abs(howRecent < 15.0)) {
     float lat = newLocation.coordinate.latitude;
     float lon = newLocation.coordinate.longitude;
     locationLabel.text = [NSString stringWithFormat:@"Latitude: %f Longitude: %f",lat,lon];
-    bestEffortAtLocation = newLocation;
+    bestEffortAtLocation = newLocation; //update the user location
   }
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-  NSLog(@"Error %@",[error description]);
+  NSLog(@"Error %@",[error description]); //log location error for diagnostics
 }
 
 @end

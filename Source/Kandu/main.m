@@ -2,8 +2,8 @@
 //  main.m
 //  Kandu
 //
-//  Created by Madison Solarana on 12/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,6 +12,7 @@
 
 int main(int argc, char *argv[])
 {
+  //Main memory used by ARC
   @autoreleasepool {
       return UIApplicationMain(argc, argv, nil, NSStringFromClass([KanduAppDelegate class]));
   }

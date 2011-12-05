@@ -2,8 +2,8 @@
 //  KanduFindActivitiesViewController.m
 //  Kandu
 //
-//  Created by Madison Solarana on 12/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 #import "KanduFindActivitiesViewController.h"
@@ -45,16 +45,19 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-  activityMap.showsUserLocation = YES;
+  [super viewDidLoad];
+  activityMap.showsUserLocation = YES; //show the user's location on the map
+  
   UIBarButtonItem *zoomButton = [[UIBarButtonItem alloc] initWithTitle:@"Zoom In" style:UIBarButtonItemStylePlain target:self action:@selector(zoomIn:)];
   UIBarButtonItem *typeButton = [[UIBarButtonItem alloc] initWithTitle:@"Type" style:UIBarButtonItemStylePlain target:self action:@selector(changeMapType:)];
   UIBarButtonItem *continueButton = [[UIBarButtonItem alloc] initWithTitle:@"Continue" style:UIBarButtonItemStylePlain target:self action:@selector(continueToNextView:)];
   
   NSArray *buttons = [[NSArray alloc] initWithObjects:zoomButton, typeButton, continueButton, nil];
-  mapControlBar.items = buttons;
-  activityMap.delegate = self;
+  mapControlBar.items = buttons; //add the control buttons to the toolbar
+  activityMap.delegate = self; //tell the map to report to itself in this view
   
+  //This block adds gps locations of places that match the user's selected activity type
+  // "Welcome to the code where the gps coordinates are made up and the locations don't matter." - Drew Carey
   if (activityType == @"Movies") {
     CLLocationCoordinate2D rollaMovie;
     rollaMovie.latitude = 37.985;
@@ -175,7 +178,7 @@
     [activityMap addAnnotation:ozarkTheaterPoint];
     
     activities = [[NSArray alloc] initWithObjects:orvalReevesPoint.title, rUSGSPoint.title,
-                           edClarkPoint.title, ozarkTheaterPoint.title, nil];
+                           edClarkPoint.title, ozarkTheaterPoint.title, nil]; //give the array the map data
   }
 }
 
@@ -184,7 +187,7 @@
 {
   [self setActivityMap:nil];
   [self setMapControlBar:nil];
-    [super viewDidUnload];
+  [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -198,7 +201,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
   if ([[segue identifier] isEqualToString:@"segueToPickActivity"]) {
     KanduPickActivityViewController *kpavc = (KanduPickActivityViewController *)[segue destinationViewController];
-    [kpavc setLocatedActivities:activities];
+    [kpavc setLocatedActivities:activities]; //pass the activities to the next view
   }
 }
 
@@ -207,24 +210,24 @@
 -(void)zoomIn: (id)sender{
   MKUserLocation *mapUserLocation = activityMap.userLocation;
   MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(mapUserLocation.location.coordinate, 50, 50);
-  [activityMap setRegion:region animated:NO];
+  [activityMap setRegion:region animated:NO]; //zoom in on the map close to where the user is located at
 }
 
 -(void)changeMapType: (id)sender{
   if (activityMap.mapType == MKMapTypeStandard) {
-    activityMap.mapType = MKMapTypeSatellite;
+    activityMap.mapType = MKMapTypeSatellite; //change to satellite view
   }
   else {
-    activityMap.mapType = MKMapTypeStandard;
+    activityMap.mapType = MKMapTypeStandard; //change to standard view
   }
 }
 
 -(void)continueToNextView: (id)sender{
-  [self performSegueWithIdentifier:@"segueToPickActivity" sender:self];
+  [self performSegueWithIdentifier:@"segueToPickActivity" sender:self]; //transition to next view when the continue button is tapped
 }
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-  self.activityMap.centerCoordinate = userLocation.location.coordinate;
+  self.activityMap.centerCoordinate = userLocation.location.coordinate; //updates the map with the user's location
 }
 
 @end

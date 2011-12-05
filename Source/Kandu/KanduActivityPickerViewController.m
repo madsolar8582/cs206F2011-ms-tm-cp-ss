@@ -2,8 +2,8 @@
 //  KanduActivityPickerViewController.m
 //  Kandu
 //
-//  Created by Madison Solarana on 12/3/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Madison Solarana, Ty Morrow, Chris Payne, & Stephen Schwartz
+//  Copyright (c) 2011, All rights reserved.
 //
 
 #import "KanduActivityPickerViewController.h"
@@ -46,7 +46,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  activityTypes = [[NSMutableArray alloc] initWithCapacity:5];
+  activityTypes = [[NSMutableArray alloc] initWithCapacity:5]; //populate the activity array with values
   [activityTypes insertObject:@"Movies" atIndex:0];
   [activityTypes insertObject:@"Theme Parks" atIndex:1];
   [activityTypes insertObject:@"Sport Complexes" atIndex:2];
@@ -60,7 +60,7 @@
 {
   [self setActivityPicker:nil];
   [self setInstructionLabel:nil];
-    [super viewDidUnload];
+  [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -74,8 +74,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
   if ([[segue identifier] isEqualToString:@"segueToFindActivity"]) {
     KanduFindActivitiesViewController *kfavc = (KanduFindActivitiesViewController *)[segue destinationViewController];
-    [kfavc setUserLocationOld:userLocation];
-    [kfavc setActivityType:activityType];
+    [kfavc setUserLocationOld:userLocation]; //pass the user's location to the next view
+    [kfavc setActivityType:activityType]; //pass the user's activity selection to the next view
   }
 }
 
@@ -95,7 +95,7 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
   activityType = [activityTypes objectAtIndex:[pickerView selectedRowInComponent:component]];
-  [self performSegueWithIdentifier:@"segueToFindActivity" sender:self];
+  [self performSegueWithIdentifier:@"segueToFindActivity" sender:self]; //when a type is picked, transition to next view
 }
 
 @end
