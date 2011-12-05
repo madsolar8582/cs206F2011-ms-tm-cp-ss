@@ -7,34 +7,16 @@ The goal of this project is to examine different methods of Software Engineering
 
 ###Resources###
 
-####Android SDK####
-* [Official Site](http://developer.android.com/index.html)
-* [SDK Download](http://developer.android.com/sdk/index.html)
-* [SDK Installation Guide](http://developer.android.com/sdk/installing.html)
-* [Android Plugin for Eclipse](http://developer.android.com/sdk/eclipse-adt.html#installing)
-* [Android Documentation](http://developer.android.com/guide/index.html)
-* [Android API Reference](http://developer.android.com/reference/packages.html)
-* [Android Tutorials](http://bit.ly/g8EPkR)
-* [Android Sample Code](http://bit.ly/gOi0TD)
-
-####Eclipse IDE####
-* [Official Site](http://eclipse.org/)
-* [Download Binaries](http://www.eclipse.org/downloads/)
-* [Official Documentation](http://help.eclipse.org/indigo/index.jsp)
-* [Git Plugin for Eclipse](http://eclipse.org/egit/)
-
-####Google APIs####
-* [Google API Listing](http://code.google.com/more/)
-* [Google API Explorer](https://code.google.com/apis/explorer/)
+####iOS####
+* [iOS Developer Library](http://developer.apple.com/library/ios/navigation/)
+* [Objective-C 2.0 Primer](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/_index.html#//apple_ref/doc/uid/TP40007594)
+* [The Objective-C Programming Language](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html#//apple_ref/doc/uid/TP30001163)
+* [Xcode Help](http://developer.apple.com/library/ios/#documentation/IDEs/Reference/xcode_help-collection/_index.html#//apple_ref/doc/uid/TP40009996)
 
 ####Git####
 * [Git & GitHub Setup Guide](http://help.github.com/set-up-git-redirect)
 * [Git Download](http://git-scm.com/download)
 * [Pro Git](http://progit.org/)
-
-####Java####
-* [JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Sun/Oracle Java Coding Standard](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 
 ###License###
 Licensed under the Academic Free License version 3.0
