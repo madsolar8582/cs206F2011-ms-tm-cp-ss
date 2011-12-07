@@ -23,6 +23,18 @@
 		7AB8D9D0148AB3A0001AC8DC /* KanduAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */; };
 		7AB8D9D3148AB3A0001AC8DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D1148AB3A0001AC8DC /* MainStoryboard.storyboard */; };
 		7AB8D9D6148AB3A0001AC8DC /* KanduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */; };
+		7AD22E4C148FF1B2004EF56C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEAE71D148FE64D00672C04 /* SenTestingKit.framework */; };
+		7AD22E4E148FF292004EF56C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6CB18E148C042000B918DA /* MessageUI.framework */; };
+		7AD22E4F148FF29A004EF56C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2C20E1148B0AF600708243 /* MapKit.framework */; };
+		7AD22E50148FF2A1004EF56C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A492304148AC31300AD0D67 /* CoreLocation.framework */; };
+		7AD22E51148FF2B3004EF56C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9C3148AB3A0001AC8DC /* CoreGraphics.framework */; };
+		7AD22E52148FF2D7004EF56C /* KanduAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */; };
+		7AD22E53148FF2D9004EF56C /* KanduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */; };
+		7AD22E54148FF2DB004EF56C /* KanduLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4922FB148ABA1300AD0D67 /* KanduLocationViewController.m */; };
+		7AD22E55148FF2DE004EF56C /* KanduActivityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A492301148ABDE200AD0D67 /* KanduActivityPickerViewController.m */; };
+		7AD22E56148FF2E3004EF56C /* KanduFindActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A492307148AD0E500AD0D67 /* KanduFindActivitiesViewController.m */; };
+		7AD22E57148FF2E8004EF56C /* KanduPickActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C20E4148B10AF00708243 /* KanduPickActivityViewController.m */; };
+		7AD22E58148FF2EB004EF56C /* KanduMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6CB192148C04EA00B918DA /* KanduMailViewController.m */; };
 		7AEAE70E148FE49900672C04 /* kandu57_glossy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE70D148FE49900672C04 /* kandu57_glossy.png */; };
 		7AEAE712148FE4E500672C04 /* kandu114_glossy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE711148FE4E500672C04 /* kandu114_glossy.png */; };
 		7AEAE714148FE4F500672C04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE713148FE4F500672C04 /* Default.png */; };
@@ -79,11 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB8D9C2148AB3A0001AC8DC /* Foundation.framework in Frameworks */,
+				7AD22E4C148FF1B2004EF56C /* SenTestingKit.framework in Frameworks */,
 				7A6CB18F148C042000B918DA /* MessageUI.framework in Frameworks */,
 				7A2C20E2148B0AF600708243 /* MapKit.framework in Frameworks */,
 				7A492305148AC31300AD0D67 /* CoreLocation.framework in Frameworks */,
 				7AB8D9C0148AB3A0001AC8DC /* UIKit.framework in Frameworks */,
-				7AB8D9C2148AB3A0001AC8DC /* Foundation.framework in Frameworks */,
 				7AB8D9C4148AB3A0001AC8DC /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,9 +105,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD22E51148FF2B3004EF56C /* CoreGraphics.framework in Frameworks */,
+				7AEAE720148FE64D00672C04 /* Foundation.framework in Frameworks */,
+				7AD22E50148FF2A1004EF56C /* CoreLocation.framework in Frameworks */,
+				7AD22E4F148FF29A004EF56C /* MapKit.framework in Frameworks */,
+				7AD22E4E148FF292004EF56C /* MessageUI.framework in Frameworks */,
 				7AEAE71E148FE64D00672C04 /* SenTestingKit.framework in Frameworks */,
 				7AEAE71F148FE64D00672C04 /* UIKit.framework in Frameworks */,
-				7AEAE720148FE64D00672C04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +342,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEAE729148FE64D00672C04 /* KanduUnitTest.m in Sources */,
+				7AD22E52148FF2D7004EF56C /* KanduAppDelegate.m in Sources */,
+				7AD22E53148FF2D9004EF56C /* KanduViewController.m in Sources */,
+				7AD22E54148FF2DB004EF56C /* KanduLocationViewController.m in Sources */,
+				7AD22E55148FF2DE004EF56C /* KanduActivityPickerViewController.m in Sources */,
+				7AD22E56148FF2E3004EF56C /* KanduFindActivitiesViewController.m in Sources */,
+				7AD22E57148FF2E8004EF56C /* KanduPickActivityViewController.m in Sources */,
+				7AD22E58148FF2EB004EF56C /* KanduMailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +430,11 @@
 		7AB8D9DA148AB3A0001AC8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kandu/Kandu-Prefix.pch";
 				INFOPLIST_FILE = "Kandu/Kandu-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,7 +445,11 @@
 		7AB8D9DB148AB3A0001AC8DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kandu/Kandu-Prefix.pch";
 				INFOPLIST_FILE = "Kandu/Kandu-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +460,7 @@
 		7AEAE72C148FE64D00672C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kandu.app/Kandu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -436,6 +469,7 @@
 				GCC_PREFIX_HEADER = "KanduUnitTest/KanduUnitTest-Prefix.pch";
 				INFOPLIST_FILE = "KanduUnitTest/KanduUnitTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -443,6 +477,7 @@
 		7AEAE72D148FE64D00672C04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kandu.app/Kandu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -451,6 +486,7 @@
 				GCC_PREFIX_HEADER = "KanduUnitTest/KanduUnitTest-Prefix.pch";
 				INFOPLIST_FILE = "KanduUnitTest/KanduUnitTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -483,6 +519,7 @@
 				7AEAE72D148FE64D00672C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

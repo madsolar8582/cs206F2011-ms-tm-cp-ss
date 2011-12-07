@@ -8,6 +8,25 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface KanduUnitTest : SenTestCase
+#include "KanduAppDelegate.h"
+#include "KanduViewController.h"
+#include "KanduLocationViewController.h"
+#include "KanduActivityPickerViewController.h"
+#include "KanduFindActivitiesViewController.h"
+#include "KanduPickActivityViewController.h"
+#include "KanduMailViewController.h"
+
+@interface KanduUnitTest : SenTestCase {
+
+  KanduAppDelegate* testDelegate;
+  UINavigationController* testNavigationController;
+  KanduViewController* testViewController;
+  KanduLocationViewController* testLocationViewController;
+  KanduActivityPickerViewController* testActivityPickerViewController;
+  KanduFindActivitiesViewController* testFindActivitiesViewController;
+  KanduPickActivityViewController* testPickActivityViewController;
+  KanduMailViewController* testMailViewController;
+
+}
 
 @end
