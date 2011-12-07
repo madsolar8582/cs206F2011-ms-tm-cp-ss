@@ -23,6 +23,15 @@
 		7AB8D9D0148AB3A0001AC8DC /* KanduAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9CF148AB3A0001AC8DC /* KanduAppDelegate.m */; };
 		7AB8D9D3148AB3A0001AC8DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D1148AB3A0001AC8DC /* MainStoryboard.storyboard */; };
 		7AB8D9D6148AB3A0001AC8DC /* KanduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */; };
+		7AEAE70E148FE49900672C04 /* kandu57_glossy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE70D148FE49900672C04 /* kandu57_glossy.png */; };
+		7AEAE712148FE4E500672C04 /* kandu114_glossy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE711148FE4E500672C04 /* kandu114_glossy.png */; };
+		7AEAE714148FE4F500672C04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE713148FE4F500672C04 /* Default.png */; };
+		7AEAE716148FE4FE00672C04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE715148FE4FD00672C04 /* Default@2x.png */; };
+		7AEAE71E148FE64D00672C04 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEAE71D148FE64D00672C04 /* SenTestingKit.framework */; };
+		7AEAE71F148FE64D00672C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9BF148AB3A0001AC8DC /* UIKit.framework */; };
+		7AEAE720148FE64D00672C04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8D9C1148AB3A0001AC8DC /* Foundation.framework */; };
+		7AEAE726148FE64D00672C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAE724148FE64D00672C04 /* InfoPlist.strings */; };
+		7AEAE729148FE64D00672C04 /* KanduUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEAE728148FE64D00672C04 /* KanduUnitTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +61,17 @@
 		7AB8D9D2148AB3A0001AC8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7AB8D9D4148AB3A0001AC8DC /* KanduViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanduViewController.h; sourceTree = "<group>"; };
 		7AB8D9D5148AB3A0001AC8DC /* KanduViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanduViewController.m; sourceTree = "<group>"; };
+		7AEAE70D148FE49900672C04 /* kandu57_glossy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kandu57_glossy.png; sourceTree = "<group>"; };
+		7AEAE711148FE4E500672C04 /* kandu114_glossy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kandu114_glossy.png; sourceTree = "<group>"; };
+		7AEAE713148FE4F500672C04 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7AEAE715148FE4FD00672C04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7AEAE71C148FE64D00672C04 /* KanduUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanduUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEAE71D148FE64D00672C04 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7AEAE723148FE64D00672C04 /* KanduUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KanduUnitTest-Info.plist"; sourceTree = "<group>"; };
+		7AEAE725148FE64D00672C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AEAE727148FE64D00672C04 /* KanduUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanduUnitTest.h; sourceTree = "<group>"; };
+		7AEAE728148FE64D00672C04 /* KanduUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanduUnitTest.m; sourceTree = "<group>"; };
+		7AEAE72A148FE64D00672C04 /* KanduUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KanduUnitTest-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7AEAE718148FE64D00672C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEAE71E148FE64D00672C04 /* SenTestingKit.framework in Frameworks */,
+				7AEAE71F148FE64D00672C04 /* UIKit.framework in Frameworks */,
+				7AEAE720148FE64D00672C04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				7AB8D9C5148AB3A0001AC8DC /* Kandu */,
+				7AEAE710148FE4A500672C04 /* Images */,
+				7AEAE721148FE64D00672C04 /* KanduUnitTest */,
 				7AB8D9BE148AB3A0001AC8DC /* Frameworks */,
 				7AB8D9BC148AB3A0001AC8DC /* Products */,
 			);
@@ -84,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7AB8D9BB148AB3A0001AC8DC /* Kandu.app */,
+				7AEAE71C148FE64D00672C04 /* KanduUnitTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +130,7 @@
 				7AB8D9BF148AB3A0001AC8DC /* UIKit.framework */,
 				7AB8D9C1148AB3A0001AC8DC /* Foundation.framework */,
 				7AB8D9C3148AB3A0001AC8DC /* CoreGraphics.framework */,
+				7AEAE71D148FE64D00672C04 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +169,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7AEAE710148FE4A500672C04 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7AEAE715148FE4FD00672C04 /* Default@2x.png */,
+				7AEAE713148FE4F500672C04 /* Default.png */,
+				7AEAE711148FE4E500672C04 /* kandu114_glossy.png */,
+				7AEAE70D148FE49900672C04 /* kandu57_glossy.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7AEAE721148FE64D00672C04 /* KanduUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				7AEAE727148FE64D00672C04 /* KanduUnitTest.h */,
+				7AEAE728148FE64D00672C04 /* KanduUnitTest.m */,
+				7AEAE722148FE64D00672C04 /* Supporting Files */,
+			);
+			path = KanduUnitTest;
+			sourceTree = "<group>";
+		};
+		7AEAE722148FE64D00672C04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AEAE723148FE64D00672C04 /* KanduUnitTest-Info.plist */,
+				7AEAE724148FE64D00672C04 /* InfoPlist.strings */,
+				7AEAE72A148FE64D00672C04 /* KanduUnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +219,24 @@
 			productName = Kandu;
 			productReference = 7AB8D9BB148AB3A0001AC8DC /* Kandu.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7AEAE71B148FE64D00672C04 /* KanduUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AEAE72B148FE64D00672C04 /* Build configuration list for PBXNativeTarget "KanduUnitTest" */;
+			buildPhases = (
+				7AEAE717148FE64D00672C04 /* Sources */,
+				7AEAE718148FE64D00672C04 /* Frameworks */,
+				7AEAE719148FE64D00672C04 /* Resources */,
+				7AEAE71A148FE64D00672C04 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanduUnitTest;
+			productName = KanduUnitTest;
+			productReference = 7AEAE71C148FE64D00672C04 /* KanduUnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				7AB8D9BA148AB3A0001AC8DC /* Kandu */,
+				7AEAE71B148FE64D00672C04 /* KanduUnitTest */,
 			);
 		};
 /* End PBXProject section */
@@ -187,10 +271,38 @@
 			files = (
 				7AB8D9CA148AB3A0001AC8DC /* InfoPlist.strings in Resources */,
 				7AB8D9D3148AB3A0001AC8DC /* MainStoryboard.storyboard in Resources */,
+				7AEAE70E148FE49900672C04 /* kandu57_glossy.png in Resources */,
+				7AEAE712148FE4E500672C04 /* kandu114_glossy.png in Resources */,
+				7AEAE714148FE4F500672C04 /* Default.png in Resources */,
+				7AEAE716148FE4FE00672C04 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AEAE719148FE64D00672C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEAE726148FE64D00672C04 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AEAE71A148FE64D00672C04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AB8D9B7148AB3A0001AC8DC /* Sources */ = {
@@ -205,6 +317,14 @@
 				7A492308148AD0E500AD0D67 /* KanduFindActivitiesViewController.m in Sources */,
 				7A2C20E5148B10AF00708243 /* KanduPickActivityViewController.m in Sources */,
 				7A6CB193148C04EA00B918DA /* KanduMailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AEAE717148FE64D00672C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEAE729148FE64D00672C04 /* KanduUnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +345,14 @@
 				7AB8D9D2148AB3A0001AC8DC /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		7AEAE724148FE64D00672C04 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AEAE725148FE64D00672C04 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,6 +425,36 @@
 			};
 			name = Release;
 		};
+		7AEAE72C148FE64D00672C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KanduUnitTest/KanduUnitTest-Prefix.pch";
+				INFOPLIST_FILE = "KanduUnitTest/KanduUnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7AEAE72D148FE64D00672C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KanduUnitTest/KanduUnitTest-Prefix.pch";
+				INFOPLIST_FILE = "KanduUnitTest/KanduUnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +475,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7AEAE72B148FE64D00672C04 /* Build configuration list for PBXNativeTarget "KanduUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AEAE72C148FE64D00672C04 /* Debug */,
+				7AEAE72D148FE64D00672C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
