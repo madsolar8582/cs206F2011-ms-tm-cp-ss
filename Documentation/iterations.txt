@@ -1,0 +1,5 @@
+For iterations, see https://github.com/madsolar8582/cs206F2011-ms-tm-cp-ss/network
+
+
+On that page, it lists all major checkins to the master branch. We consider each checkin on the master branch a revision of the Applicaton.
+
