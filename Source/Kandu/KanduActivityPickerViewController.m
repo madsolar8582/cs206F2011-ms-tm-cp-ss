@@ -52,7 +52,7 @@
   [activityTypes insertObject:@"Sport Complexes" atIndex:2];
   [activityTypes insertObject:@"Parks" atIndex:3];
   [activityTypes insertObject:@"Local Attractions" atIndex:4];
-  instructionLabel.text = @"Choose and Activity Type: ";
+  instructionLabel.text = @"Choose an Activity Type: ";
 }
 
 
